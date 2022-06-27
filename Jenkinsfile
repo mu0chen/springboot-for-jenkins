@@ -6,6 +6,7 @@ pipeline {
                 label "maven"
             }
             steps {
+                sh 'echo which mvn'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
