@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             agent {
-                label "code-build-node"
+                label "maven"
             }
             steps {
                 sh 'mvn -B -DskipTests clean package'
