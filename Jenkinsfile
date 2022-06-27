@@ -6,7 +6,7 @@ pipeline {
                 label "maven"
             }
             steps {
-                sh 'echo which mvn'
+                sh 'ip addr'
                 sh 'mvn -B -DskipTests clean package'
             }
         }
