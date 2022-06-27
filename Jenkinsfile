@@ -7,7 +7,7 @@ pipeline {
             }
             steps {
                 sh 'ip addr'
-                sh 'mvn -B -DskipTests clean package'
+                sh '/opt/maven/apache-maven-3.6.3/bin/mvn -B -DskipTests clean package'
             }
         }
     }
